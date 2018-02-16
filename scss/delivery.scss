@@ -46,123 +46,76 @@
       -webkit-background-size: cover;
       background-size: cover;
     }
+    .banner__content{
+      left: 50%;
+      top: 32.875%;
+      transform: translate(-50%);
+      text-align: center;
+      @media screen and (max-width : 431px){
+        transform: translate(-50%,-50%);
+        top: 50%;
+      }
+      .banner__title{
+        font-size: 48px;
+        text-transform: uppercase;
+        font-family: "Play", sans-serif;
+        color: #fff;
+      }
+      .banner__subtitle{
+        margin: 32px auto;
+        color: #fff;
+        position: relative;
+        &:before{
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+        @media screen and (max-width : 1024px){
+          margin: 18px auto 18px;
+        }
+      }
+      .banner__descr{
+        font-size: 18px;
+        color: #fff;
+        font-family: "Play", sans-serif;
+        width: auto;
+      }
+
+    }
     .container {
       height : 100%;
     }
+  }
+}
 
-    .play-icon {
-      width            : 105px;
-      height           : 105px;
-      position         : absolute;
-      top              : 0;
-      bottom           : 0;
-      right            : 0;
-      left             : 0;
-      margin           : auto;
-      background-color : rgba(255, 255, 255, .9);
-      transition       : all .3s linear;
-      border-radius    : 50%;
-      cursor           : pointer;
-      z-index          : 8;
-      opacity          : 1;
-
-      @media screen and (max-width : 992px) {
-        top    : 485px;
-        bottom : auto;
-        width  : 130px;
-        height : 130px;
-      }
-
-      @media screen and (max-width : 480px) {
-        width  : 50px;
-        height : 50px;
-        top    : 0;
-        bottom : 0;
-        margin : auto;
-      }
-
-      &.active {
-        opacity : .5;
-      }
-
-      &:hover {
-        background-color : #ff0054;
-
-        &:before {
-          border-left-color : #fff;
-        }
-      }
-
-      &:before {
-        content      : '';
-        position     : absolute;
-        left         : 0;
-        right        : 0;
-        top          : 0;
-        bottom       : 0;
-        margin       : auto;
-        width        : 0;
-        height       : 0;
-        border       : 16px solid transparent;
-        border-left  : 29px solid rgba(255, 0, 84, .9);
-        border-right : 0;
-        transform    : translateX(3px);
-        transition   : all .3s linear;
-
-        @media screen and (max-width : 992px) {
-          border       : 20px solid transparent;
-          border-left  : 36px solid rgba(255, 0, 84, .9);
-          border-right : 0;
-        }
-
-        @media screen and (max-width : 480px) {
-          border       : 8px solid transparent;
-          border-left  : 14px solid rgba(255, 0, 84, .9);
-          border-right : 0;
-        }
-      }
+.header__article__title{
+  margin: 0;
+  font-size: 1em;
+}
+.delivery__page-title{
+  padding: 0;
+}
+.delivery__variants__tools-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  .delivery__variant-item{
+    display: block;
+    margin: 0;
+    width: 30%;
+    @media screen and (max-width : 768px){
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
     }
-
-    .scroll-icon {
-      width         : 37px;
-      height        : 58px;
-      position      : absolute;
-      bottom        : 39px;
-      right         : 0;
-      left          : 0;
-      margin        : 0 auto;
-      border-radius : 17px;
-      border        : 2px solid #fff;
-
-      &.elari {
-        @media screen and (max-width : 992px) {
-          display : none;
-        }
-      }
-    }
-
-    .wheel {
-      position      : absolute;
-      left          : 0;
-      right         : 0;
-      top           : 12px;
-      margin        : 0 auto;
-      width         : 4px;
-      height        : 9px;
-      border-radius : 2px;
-      border        : 2px solid #fff;
-    }
-
-    .move {
-      position      : absolute;
-      left          : 0;
-      right         : 0;
-      top           : 17px;
-      margin        : 0 auto;
-      width         : 4px;
-      height        : 35px;
-      border-radius : 2px;
-      background    : linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    .delivery__article__title{
+      
     }
   }
+}
+#Layer_1,#Layer_2,#Layer_3{
+  width: 132px;
 }
