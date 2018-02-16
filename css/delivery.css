@@ -1,6 +1,141 @@
-@media screen and (max-width: 992px) {
-  p {
+.breadcrumbs-delivery {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(242, 242, 242, 0.88); }
+  @media screen and (max-width: 992px) {
+    .breadcrumbs-delivery {
+      height: 50px; } }
+
+.delivery-page__preview {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: -50px; }
+  @media screen and (max-width: 768px) {
+    .delivery-page__preview {
+      margin-top: 0; } }
+
+.delivery-page__banner-fix {
+  position: relative;
+  opacity: 0;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .delivery-page__banner-fix {
+      display: none; } }
+
+.delivery-page__preview-inner {
+  background: url(../img/delivery-baner.jpg) no-repeat center center;
+  background-size: 100% auto;
+  background-position: 0 0;
+  display: block;
+  height: auto;
+  position: relative;
+  outline: none; }
+  @media screen and (max-width: 768px) {
+    .delivery-page__preview-inner {
+      height: 300px;
+      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      -webkit-background-size: cover;
+      background-size: cover; } }
+  @media screen and (max-width: 430px) {
+    .delivery-page__preview-inner {
+      height: 200px;
+      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      -webkit-background-size: cover;
+      background-size: cover; } }
+  .delivery-page__preview-inner .container {
+    height: 100%; }
+  .delivery-page__preview-inner .play-icon {
+    width: 105px;
+    height: 105px;
+    position: absolute;
     top: 0;
     bottom: 0;
-  }
-}
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s linear;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 8;
+    opacity: 1; }
+    @media screen and (max-width: 992px) {
+      .delivery-page__preview-inner .play-icon {
+        top: 485px;
+        bottom: auto;
+        width: 130px;
+        height: 130px; } }
+    @media screen and (max-width: 480px) {
+      .delivery-page__preview-inner .play-icon {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        bottom: 0;
+        margin: auto; } }
+    .delivery-page__preview-inner .play-icon.active {
+      opacity: .5; }
+    .delivery-page__preview-inner .play-icon:hover {
+      background-color: #ff0054; }
+      .delivery-page__preview-inner .play-icon:hover:before {
+        border-left-color: #fff; }
+    .delivery-page__preview-inner .play-icon:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border: 16px solid transparent;
+      border-left: 29px solid rgba(255, 0, 84, 0.9);
+      border-right: 0;
+      transform: translateX(3px);
+      transition: all .3s linear; }
+      @media screen and (max-width: 992px) {
+        .delivery-page__preview-inner .play-icon:before {
+          border: 20px solid transparent;
+          border-left: 36px solid rgba(255, 0, 84, 0.9);
+          border-right: 0; } }
+      @media screen and (max-width: 480px) {
+        .delivery-page__preview-inner .play-icon:before {
+          border: 8px solid transparent;
+          border-left: 14px solid rgba(255, 0, 84, 0.9);
+          border-right: 0; } }
+  .delivery-page__preview-inner .scroll-icon {
+    width: 37px;
+    height: 58px;
+    position: absolute;
+    bottom: 39px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 17px;
+    border: 2px solid #fff; }
+    @media screen and (max-width: 992px) {
+      .delivery-page__preview-inner .scroll-icon.elari {
+        display: none; } }
+  .delivery-page__preview-inner .wheel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12px;
+    margin: 0 auto;
+    width: 4px;
+    height: 9px;
+    border-radius: 2px;
+    border: 2px solid #fff; }
+  .delivery-page__preview-inner .move {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+    margin: 0 auto;
+    width: 4px;
+    height: 35px;
+    border-radius: 2px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, white 100%); }
