@@ -1,0 +1,464 @@
+.footer {
+	background-color : #171922;
+	height           : 78px;
+	
+	@media screen and (max-width : 992px) {
+		height : auto;
+	}
+	
+	.container {
+		display : flex;
+		
+		@media screen and (max-width : 1150px) {
+			max-width : 1000px;
+			padding   : 0;
+		}
+		
+		@media screen and (max-width : 992px) {
+			padding        : 0 40px;
+			flex-direction : column;
+			align-items    : center;
+		}
+		
+		@media screen and (max-width : 480px) {
+			padding : 0 20px;
+		}
+	}
+	
+	&__logo {
+		padding-top    : 19px;
+		padding-bottom : 22px;
+		width          : 128px;
+		
+		@media screen and (max-width : 1150px) {
+			display         : flex;
+			justify-content : center;
+		}
+		
+		@media screen and (max-width : 992px) {
+			border-bottom  : 1px solid rgba(255, 255, 255, .15);
+			width          : 100%;
+			padding-top    : 50px;
+			padding-bottom : 50px;
+		}
+		
+		@media screen and (max-width : 480px) {
+			padding : 25px 0;
+		}
+		
+		&-desk {
+			@media screen and (max-width : 992px) {
+				display : none;
+			}
+		}
+		
+		&-mob {
+			display : none;
+			
+			@media screen and (max-width : 992px) {
+				display : inline-block;
+			}
+		}
+		
+		img {
+			width  : auto;
+			height : auto;
+		}
+	}
+	
+	&__about {
+		width           : 173px;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+		position        : relative;
+		border-left     : 1px solid rgba(255, 255, 255, .15);
+		border-right    : 1px solid rgba(255, 255, 255, .15);
+		
+		@media screen and (max-width : 992px) {
+			border-left   : none;
+			border-right  : none;
+			border-bottom : 1px solid rgba(255, 255, 255, .15);
+			width : 100%;
+			flex-direction : column;
+		}
+		
+		& > a {
+			position       : relative;
+			color          : #fff;
+			transition     : all .3s linear;
+			z-index        : 5;
+			pointer-events : none;
+			
+			@media screen and (max-width : 992px) {
+				font-size : 2.8rem;
+				line-height : 2.8rem;
+				margin-top : 40px;
+				margin-bottom : 40px;
+				pointer-events: auto;
+				
+				span{
+					right : -30px;
+				}
+				
+				svg{
+					width : 21px;
+					height : 13px;
+				}
+			}
+			
+			@media screen and (max-width : 480px) {
+				font-size : 1.8rem;
+				line-height : 1.8rem;
+				margin : 10px 0;
+				
+				span{
+					right : -20px;
+				}
+				
+				svg{
+					width : 12px;
+					height : 9px;
+				}
+			}
+			
+			span {
+				position   : absolute;
+				top        : 0;
+				right      : -20px;
+				overflow   : hidden;
+				opacity    : 0;
+				transition : all .3s linear;
+				
+				&.active {
+					visibility : visible;
+					opacity    : 1;
+				}
+			}
+		}
+	}
+	
+	&__about-hover {
+		position         : absolute;
+		bottom           : 0;
+		width            : 100%;
+		padding-bottom   : 60px;
+		background-color : #4f525c;
+		z-index          : 3;
+		visibility       : hidden;
+		opacity          : 0;
+		transition       : all .3s linear;
+		
+		@media screen and (max-width : 992px) {
+			position : static;
+			background-color : transparent;
+			display : none;
+			transition: none;
+			opacity : 1;
+			visibility : visible;
+			padding-bottom : 0;
+		}
+		
+		&.active {
+			opacity    : 1;
+			visibility : visible;
+		}
+	}
+	
+	&__about-inner {
+		display        : flex;
+		flex-direction : column;
+		align-items    : center;
+		padding-top    : 25px;
+		
+		@media screen and (max-width : 992px) {
+			padding-top : 0;
+		}
+		
+		a {
+			margin-bottom : 15px;
+			transition    : all .3s linear;
+			color         : #fff;
+			
+			@media screen and (max-width : 992px) {
+				font-size   : 2.8rem;
+				line-height : 2.8rem;
+				padding : 5px 0;
+			}
+			
+			@media screen and (max-width : 480px) {
+				font-size : 1.8rem;
+				line-height : 1.8rem;
+				margin : 5px 0;
+			}
+			
+			&:hover {
+				color : #ff0054;
+			}
+		}
+	}
+	
+	&__phone {
+		display      : flex;
+		padding-left : 50px;
+		align-items  : center;
+		color        : #fff;
+		
+		@media screen and (max-width : 992px) {
+			padding-left : 0;
+			padding-top : 50px;
+			padding-bottom : 50px;
+			border-bottom : 1px solid rgba(255, 255, 255, .15);
+			width : 100%;
+			justify-content : center;
+		}
+		
+		@media screen and (max-width : 480px) {
+			padding : 25px 0;
+		}
+		
+		a {
+			color       : #ff0054;
+			transition  : all .3s linear;
+			margin-left : 41px;
+			
+			&:hover {
+				color : #fff;
+			}
+		}
+	}
+	
+	&__phone-desk {
+		display : flex;
+		
+		@media screen and (max-width : 1150px) {
+			display : none;
+		}
+		
+		@media screen and (max-width : 992px) {
+			display : flex;
+			flex-direction : column;
+			font-size : 2.8rem;
+			line-height : 2.8rem;
+			
+			@media screen and (max-width : 480px) {
+				font-size : 1.8rem;
+				line-height : 1.8rem;
+			}
+			
+			a{
+				margin-top : 50px;
+				
+				@media screen and (max-width : 480px) {
+					margin: 15px auto 0;
+				}
+			}
+		}
+		
+		div:first-child {
+			margin-right : 60px;
+			position     : relative;
+			
+			@media screen and (max-width : 992px) {
+				position : static;
+				margin-right : 0;
+				padding-bottom : 45px;
+			}
+			
+			@media screen and (max-width : 480px) {
+				padding-bottom : 15px;
+			}
+			
+			&:before {
+				content          : '';
+				position         : absolute;
+				right            : -30px;
+				top              : 0;
+				height           : 17px;
+				width            : 1px;
+				background-color : rgba(255, 255, 255, .3);
+				transform        : skew(-10deg);
+				
+				@media screen and (max-width : 992px) {
+					display : none;
+				}
+			}
+		}
+		
+	}
+	
+	&__phone-mob {
+		position : relative;
+		display  : none;
+		
+		@media screen and (max-width : 1150px) {
+			display : block;
+		}
+		
+		@media screen and (max-width : 992px) {
+			display : none;
+		}
+		
+		& > a {
+			position       : relative;
+			color          : #fff;
+			transition     : all .3s linear;
+			z-index        : 5;
+			pointer-events : none;
+			margin-left    : 0;
+			
+			span {
+				position   : absolute;
+				top        : 0;
+				right      : -20px;
+				overflow   : hidden;
+				opacity    : 0;
+				transition : all .3s linear;
+				
+				&.active {
+					visibility : visible;
+					opacity    : 1;
+				}
+			}
+		}
+		
+	}
+	
+	&__phone-hover {
+		position         : absolute;
+		z-index          : 3;
+		visibility       : hidden;
+		opacity          : 0;
+		transition       : all .3s linear;
+		bottom           : -32px;
+		padding-bottom   : 80px;
+		width            : 185px;
+		left             : -10px;
+		display          : flex;
+		flex-direction   : column;
+		align-items      : center;
+		background-color : #4f525c;
+		padding-top      : 25px;
+		
+		&.active {
+			opacity    : 1;
+			visibility : visible;
+		}
+		
+		a {
+			&:first-child {
+				margin-bottom : 25px;
+				color         : #ff0054;
+			}
+		}
+	}
+	
+	&__phone-inner {
+		display        : flex;
+		flex-direction : column;
+		align-items    : center;
+		padding-top    : 0 !important;
+		padding-bottom : 0 !important;
+		margin         : 0 !important;
+		
+		&:before {
+			display : none !important;
+		}
+		
+		a {
+			margin-left : 0 !important;
+			color       : #fff;
+		}
+	}
+	
+	&__socials {
+		margin-left  : auto;
+		border-left  : 1px solid rgba(255, 255, 255, .15);
+		border-right : 1px solid rgba(255, 255, 255, .15);
+		padding      : 0 50px;
+		display      : flex;
+		align-items  : center;
+		
+		@media screen and (max-width : 992px) {
+			padding : 50px 0;
+			width : 100%;
+			justify-content : center;
+			border-left : none;
+			border-right :none;
+		}
+		
+		@media screen and (max-width : 480px) {
+			padding : 25px 0;
+		}
+		
+		a {
+			&:nth-child(2) {
+				margin : 0 38px;
+				
+				@media screen and (max-width : 992px) {
+					margin : 0 120px;
+				}
+				
+				@media screen and (max-width : 480px) {
+					margin : 0 90px;
+				}
+			}
+			
+			*[fill] {
+				transition : all .3s linear;
+			}
+			
+			&:hover {
+				*[fill] {
+					fill : #ff0054;
+				}
+			}
+			
+			@media screen and (max-width : 992px) {
+				&:nth-child(1){
+					svg {
+						width :16px;
+						height : 34px;
+					}
+				}
+				
+				&:nth-child(2){
+					svg {
+						width : 35px;
+						height : 34px;
+					}
+				}
+				
+				&:nth-child(3){
+					svg {
+						width : 38px;
+						height : 26px;
+					}
+				}
+			}
+			
+			@media screen and (max-width : 480px) {
+				&:nth-child(1){
+					svg {
+						width :25px;
+						height : 25px;
+					}
+				}
+				
+				&:nth-child(2){
+					svg {
+						width : 25px;
+						height : 25px;
+					}
+				}
+				
+				&:nth-child(3){
+					svg {
+						width : 25px;
+						height : 25px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@media screen and (max-width: 992px) {
+  p {
+    top: 0;
+    bottom: 0;
+  }
+}
