@@ -1,86 +1,85 @@
 .breadcrumbs-delivery{
-  position: relative;
-  z-index: 10;
-  background-color: rgba(242,242,242,.88);
+  position          : relative;
+  z-index           : 10;
+  background-color  : rgba(242,242,242,.88);
   @media screen and (max-width : 992px){
-    height: 50px;
+    height  : 50px;
   }
 }
 .delivery-page {
   &__preview {
-    position : relative;
-    width    : 100%;
-    height   : auto;
-    margin-top: -50px;
+    position    : relative;
+    width       : 100%;
+    height      : auto;
+    margin-top  : -50px;
     @media screen and (max-width : 768px){
-      margin-top: 0;
+      margin-top : 0;
     }
   }
   &__banner-fix{
-    position: relative;
-    opacity: 0;
-    width: 100%;
+    position : relative;
+    opacity  : 0;
+    width    : 100%;
     @media screen and (max-width : 768px){
-      display: none;
+      display : none;
     }
   }
   &__preview-inner {
-    background: url(../img/delivery-baner.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-position: 0 0;
-    display: block;
-    height: auto;
-    position: relative;
-    outline: none;
+    background          : url(../img/delivery-baner.jpg) no-repeat center center;
+    background-size     : 100% auto;
+    background-position : 0 0;
+    display             : block;
+    height              : auto;
+    position            : relative;
+    outline             : none;
     @media screen and (max-width : 768px){
-      height: 300px;
-      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
-      background-position: 0 0;
-      -webkit-background-size: cover;
-      background-size: cover;
+      height              : 300px;
+      background          : url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position : 0 0;
+      background-size     : cover;
     }
     @media screen and (max-width : 430px){
-      height: 200px;
-      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
-      background-position: 0 0;
-      -webkit-background-size: cover;
-      background-size: cover;
+      height                    : 200px;
+      background                : url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position       : 0 0;
+      -webkit-background-size   : cover;
+      background-size           : cover;
     }
     .banner__content{
-      left: 50%;
-      top: 32.875%;
-      transform: translate(-50%);
-      text-align: center;
+      left        : 50%;
+      top         : 32.875%;
+      transform   : translate(-50%);
+      text-align  : center;
       @media screen and (max-width : 431px){
-        transform: translate(-50%,-50%);
-        top: 50%;
+        transform : translate(-50%,-50%);
+        top       : 50%;
       }
       .banner__title{
-        font-size: 48px;
-        text-transform: uppercase;
-        font-family: "Play", sans-serif;
-        color: #fff;
+        font-size       : 48px;
+        text-transform  : uppercase;
+        font-family     : "Play", sans-serif;
+        color           : #fff;
       }
       .banner__subtitle{
-        margin: 32px auto;
-        color: #fff;
-        position: relative;
+        margin   : 32px auto;
+        color    : #fff;
+        position : relative;
         &:before{
-          background-color: #fff;
-          position: absolute;
-          top: 50%;
-          transform: translateX(-50%);
-          left: 50%;
+          background-color  : #fff;
+          position          : absolute;
+          top               : 50%;
+          transform         : translateX(-50%);
+          left              : 50%;
         }
         @media screen and (max-width : 1024px){
-          margin: 18px auto 18px;
+          margin : 18px auto 18px;
         }
       }
       .banner__descr{
-        font-size: 18px;
-        color: #fff;
-        font-family: "Play", sans-serif;
-        width: auto;
+        font-size     : 18px;
+        color         : #fff;
+        font-family   : "Play", sans-serif;
+        width         : auto;
       }
 
     }
@@ -91,31 +90,72 @@
 }
 
 .header__article__title{
-  margin: 0;
-  font-size: 1em;
+  margin    : 0;
+  font-size : 1em;
 }
 .delivery__page-title{
-  padding: 0;
+  padding : 0;
 }
 .delivery__variants__tools-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 40px;
+  display         : flex;
+  justify-content : space-between;
+  flex-wrap       : wrap;
+  padding-top     : 40px;
   .delivery__variant-item{
-    display: block;
-    margin: 0;
-    width: 30%;
+    display : block;
+    margin  : 0;
+    width   : 32.5%;
+    padding-bottom: 50px;
     @media screen and (max-width : 768px){
-      width: 100%;
-      padding: 20px 0;
-      text-align: center;
+      width       : 100%;
+      padding     : 20px 0;
+      text-align  : center;
     }
     .delivery__article__title{
-      
+      font-size : 20px;
+      padding   : 16px 0;
+    }
+    p{
+      font-size   : 16px;
+      line-height : 24px;
+      color       : #1e1e1e;
     }
   }
 }
-#Layer_1,#Layer_2,#Layer_3{
-  width: 132px;
+.attention__article{
+  width   : 100%;
+  padding : 60px 0;
+  @media screen and (max-width : 768px){
+    padding: 30px 0;
+  }
+  .attention__header{
+    display         : block;
+    width           : 100%;
+    text-transform  : uppercase;
+    font-size       : 24px;
+    text-align      : center;
+    font-weight     : bold;
+  }
+  .attention__text{
+    text-align  : center;
+    width       : 70%;
+    display     : block;
+    margin      : 16px auto;
+    font-size   : 16px;
+    line-height : 22px;
+    @media screen and (max-width : 768px){
+      width : 100%;
+    }
+  }
+}
+.delivery-svg{
+  width  : 132px;
+  height : 132px;
+}
+.red-text{
+  display         : inline-block;
+  border          : none;
+  text-decoration : none;
+  color           : #ff0054;
+  font-size       : 1em;
 }
