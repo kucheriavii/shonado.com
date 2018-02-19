@@ -1,4 +1,4 @@
-.breadcrumbs-delivery{
+.breadcrumbs-opacity{
   position          : relative;
   z-index           : 10;
   background-color  : rgba(242,242,242,.88);
@@ -6,7 +6,8 @@
     height  : 50px;
   }
 }
-.delivery-page {
+
+.static-page {
   &__preview {
     position    : relative;
     width       : 100%;
@@ -25,7 +26,7 @@
     }
   }
   &__preview-inner {
-    background          : url(../img/delivery-baner.jpg) no-repeat center center;
+    background : url(../img/delivery-baner.png) no-repeat center center;
     background-size     : 100% auto;
     background-position : 0 0;
     display             : block;
@@ -88,25 +89,73 @@
     }
   }
 }
-
+.delivery__page-banner, .payment__page-banner{
+  background : url(../img/delivery-baner.png) no-repeat center center;
+  background-size     : 100% auto;
+  background-position : 0 0;
+  display             : block;
+  height              : auto;
+  position            : relative;
+  outline             : none;
+  @media screen and (max-width : 768px){
+    height              : 300px;
+    background          : url(../img/delivery-baner-mobile.jpg) no-repeat;
+    background-position : 0 0;
+    background-size     : cover;
+  }
+  @media screen and (max-width : 430px){
+    height                    : 200px;
+    background                : url(../img/delivery-baner-mobile.jpg) no-repeat;
+    background-position       : 0 0;
+    -webkit-background-size   : cover;
+    background-size           : cover;
+  }
+}
+.payment__page-banner{
+  background: url("../img/payment-baner.png") no-repeat center center;
+  background-size     : 100% auto;
+  background-position : 0 0;
+  @media screen and (max-width : 768px){
+    height              : 300px;
+    background          : url(../img/payment-baner-mobile.jpg) no-repeat;
+    background-position : 0 0;
+    background-size     : cover;
+  }
+  @media screen and (max-width : 430px){
+    height                    : 200px;
+    background                : url(../img/payment-baner-mobile.jpg) no-repeat;
+    background-position       : 0 0;
+    -webkit-background-size   : cover;
+    background-size           : cover;
+  }
+}
 .header__article__title{
   margin    : 0;
   font-size : 1em;
 }
-.delivery__page-title{
+.delivery__page-title, .payment__page-title{
   padding : 0;
 }
-.delivery__variants__tools-list{
+.payment__page-title{
+  background: none;
+}
+.static__variants__tools-list{
   display         : flex;
-  justify-content : space-between;
+  justify-content : center;
   flex-wrap       : wrap;
-  padding-top     : 40px;
-  .delivery__variant-item{
+  padding-top     : 80px;
+  margin-top      : -40px;
+  .static__variant-item{
     display : block;
     margin  : 0;
-    width   : 32.5%;
+    width   : 33.3%;
     padding-bottom: 50px;
+    padding-right: 30px;
+    &:last-child{
+      padding-right: 0;
+    }
     @media screen and (max-width : 768px){
+      margin-top  : 0px;
       width       : 100%;
       padding     : 20px 0;
       text-align  : center;

@@ -1,30 +1,30 @@
-.breadcrumbs-delivery {
+.breadcrumbs-opacity {
   position: relative;
   z-index: 10;
   background-color: rgba(242, 242, 242, 0.88); }
   @media screen and (max-width: 992px) {
-    .breadcrumbs-delivery {
+    .breadcrumbs-opacity {
       height: 50px; } }
 
-.delivery-page__preview {
+.static-page__preview {
   position: relative;
   width: 100%;
   height: auto;
   margin-top: -50px; }
   @media screen and (max-width: 768px) {
-    .delivery-page__preview {
+    .static-page__preview {
       margin-top: 0; } }
 
-.delivery-page__banner-fix {
+.static-page__banner-fix {
   position: relative;
   opacity: 0;
   width: 100%; }
   @media screen and (max-width: 768px) {
-    .delivery-page__banner-fix {
+    .static-page__banner-fix {
       display: none; } }
 
-.delivery-page__preview-inner {
-  background: url(../img/delivery-baner.jpg) no-repeat center center;
+.static-page__preview-inner {
+  background: url(../img/delivery-baner.png) no-repeat center center;
   background-size: 100% auto;
   background-position: 0 0;
   display: block;
@@ -32,79 +32,127 @@
   position: relative;
   outline: none; }
   @media screen and (max-width: 768px) {
-    .delivery-page__preview-inner {
+    .static-page__preview-inner {
       height: 300px;
       background: url(../img/delivery-baner-mobile.jpg) no-repeat;
       background-position: 0 0;
       background-size: cover; } }
   @media screen and (max-width: 430px) {
-    .delivery-page__preview-inner {
+    .static-page__preview-inner {
       height: 200px;
       background: url(../img/delivery-baner-mobile.jpg) no-repeat;
       background-position: 0 0;
       -webkit-background-size: cover;
       background-size: cover; } }
-  .delivery-page__preview-inner .banner__content {
+  .static-page__preview-inner .banner__content {
     left: 50%;
     top: 32.875%;
     transform: translate(-50%);
     text-align: center; }
     @media screen and (max-width: 431px) {
-      .delivery-page__preview-inner .banner__content {
+      .static-page__preview-inner .banner__content {
         transform: translate(-50%, -50%);
         top: 50%; } }
-    .delivery-page__preview-inner .banner__content .banner__title {
+    .static-page__preview-inner .banner__content .banner__title {
       font-size: 48px;
       text-transform: uppercase;
       font-family: "Play", sans-serif;
       color: #fff; }
-    .delivery-page__preview-inner .banner__content .banner__subtitle {
+    .static-page__preview-inner .banner__content .banner__subtitle {
       margin: 32px auto;
       color: #fff;
       position: relative; }
-      .delivery-page__preview-inner .banner__content .banner__subtitle:before {
+      .static-page__preview-inner .banner__content .banner__subtitle:before {
         background-color: #fff;
         position: absolute;
         top: 50%;
         transform: translateX(-50%);
         left: 50%; }
       @media screen and (max-width: 1024px) {
-        .delivery-page__preview-inner .banner__content .banner__subtitle {
+        .static-page__preview-inner .banner__content .banner__subtitle {
           margin: 18px auto 18px; } }
-    .delivery-page__preview-inner .banner__content .banner__descr {
+    .static-page__preview-inner .banner__content .banner__descr {
       font-size: 18px;
       color: #fff;
       font-family: "Play", sans-serif;
       width: auto; }
-  .delivery-page__preview-inner .container {
+  .static-page__preview-inner .container {
     height: 100%; }
+
+.delivery__page-banner, .payment__page-banner {
+  background: url(../img/delivery-baner.png) no-repeat center center;
+  background-size: 100% auto;
+  background-position: 0 0;
+  display: block;
+  height: auto;
+  position: relative;
+  outline: none; }
+  @media screen and (max-width: 768px) {
+    .delivery__page-banner, .payment__page-banner {
+      height: 300px;
+      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      background-size: cover; } }
+  @media screen and (max-width: 430px) {
+    .delivery__page-banner, .payment__page-banner {
+      height: 200px;
+      background: url(../img/delivery-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      -webkit-background-size: cover;
+      background-size: cover; } }
+
+.payment__page-banner {
+  background: url("../img/payment-baner.png") no-repeat center center;
+  background-size: 100% auto;
+  background-position: 0 0; }
+  @media screen and (max-width: 768px) {
+    .payment__page-banner {
+      height: 300px;
+      background: url(../img/payment-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      background-size: cover; } }
+  @media screen and (max-width: 430px) {
+    .payment__page-banner {
+      height: 200px;
+      background: url(../img/payment-baner-mobile.jpg) no-repeat;
+      background-position: 0 0;
+      -webkit-background-size: cover;
+      background-size: cover; } }
 
 .header__article__title {
   margin: 0;
   font-size: 1em; }
 
-.delivery__page-title {
+.delivery__page-title, .payment__page-title {
   padding: 0; }
 
-.delivery__variants__tools-list {
+.payment__page-title {
+  background: none; }
+
+.static__variants__tools-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  padding-top: 40px; }
-  .delivery__variants__tools-list .delivery__variant-item {
+  padding-top: 80px;
+  margin-top: -40px; }
+  .static__variants__tools-list .static__variant-item {
     display: block;
     margin: 0;
-    width: 32.5%;
-    padding-bottom: 50px; }
+    width: 33.3%;
+    padding-bottom: 50px;
+    padding-right: 30px; }
+    .static__variants__tools-list .static__variant-item:last-child {
+      padding-right: 0; }
     @media screen and (max-width: 768px) {
-      .delivery__variants__tools-list .delivery__variant-item {
+      .static__variants__tools-list .static__variant-item {
+        margin-top: 0px;
         width: 100%;
         padding: 20px 0;
         text-align: center; } }
-    .delivery__variants__tools-list .delivery__variant-item .delivery__article__title {
+    .static__variants__tools-list .static__variant-item .delivery__article__title {
       font-size: 20px;
       padding: 16px 0; }
-    .delivery__variants__tools-list .delivery__variant-item p {
+    .static__variants__tools-list .static__variant-item p {
       font-size: 16px;
       line-height: 24px;
       color: #1e1e1e; }
