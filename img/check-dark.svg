@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="16" viewBox="0 0 19 16">
+    <defs>
+        <path id="a" d="M166 1550l5 5 8-10" />
+    </defs>
+    <g opacity=".6" transform="translate(-163 -1543)">
+        <use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="3" xlink:href="#a" />
+    </g>
+</svg>

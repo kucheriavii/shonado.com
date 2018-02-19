@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+    <defs>
+        <path id="a" d="M270 25v-2h17v2z" />
+        <path id="b" d="M270 31v-2h17v2z" />
+        <path id="c" d="M270 37v-2h17v2z" />
+    </defs>
+    <g transform="translate(-270 -23)">
+        <use fill="#fff" xlink:href="#a" />
+    </g>
+    <g transform="translate(-270 -23)">
+        <use fill="#fff" xlink:href="#b" />
+    </g>
+    <g transform="translate(-270 -23)">
+        <use fill="#fff" xlink:href="#c" />
+    </g>
+</svg>

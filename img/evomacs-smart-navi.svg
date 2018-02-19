@@ -1,0 +1,101 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BCBBBD;}
+	.st1{clip-path:url(#SVGID_2_);fill:#E8E7E9;}
+	.st2{clip-path:url(#SVGID_2_);fill:#E7E6E7;}
+	.st3{clip-path:url(#SVGID_2_);fill:#E6E5E6;}
+	.st4{clip-path:url(#SVGID_2_);fill:#E4E3E5;}
+	.st5{clip-path:url(#SVGID_2_);fill:#E3E2E4;}
+	.st6{clip-path:url(#SVGID_2_);fill:#E2E1E2;}
+	.st7{clip-path:url(#SVGID_2_);fill:#E1E0E1;}
+	.st8{clip-path:url(#SVGID_2_);fill:#E0DFE0;}
+	.st9{clip-path:url(#SVGID_2_);fill:#DFDEDF;}
+	.st10{clip-path:url(#SVGID_2_);fill:#DEDCDE;}
+	.st11{clip-path:url(#SVGID_2_);fill:#DCDBDD;}
+	.st12{clip-path:url(#SVGID_2_);fill:#DBDADC;}
+	.st13{clip-path:url(#SVGID_2_);fill:#DAD9DB;}
+	.st14{clip-path:url(#SVGID_2_);fill:#D9D8D9;}
+	.st15{clip-path:url(#SVGID_2_);fill:#D8D7D8;}
+	.st16{clip-path:url(#SVGID_2_);fill:#D7D6D7;}
+	.st17{clip-path:url(#SVGID_2_);fill:#D6D5D6;}
+	.st18{clip-path:url(#SVGID_2_);fill:#D5D4D5;}
+	.st19{clip-path:url(#SVGID_2_);fill:#D4D3D4;}
+	.st20{clip-path:url(#SVGID_2_);fill:#D3D2D3;}
+	.st21{clip-path:url(#SVGID_2_);fill:#D2D1D2;}
+	.st22{clip-path:url(#SVGID_2_);fill:#D1D0D1;}
+	.st23{clip-path:url(#SVGID_2_);fill:#D0CFD0;}
+	.st24{clip-path:url(#SVGID_2_);fill:#CFCED0;}
+	.st25{clip-path:url(#SVGID_2_);fill:#CECDCF;}
+	.st26{clip-path:url(#SVGID_2_);fill:#CECCCE;}
+	.st27{clip-path:url(#SVGID_2_);fill:#CDCBCD;}
+	.st28{clip-path:url(#SVGID_2_);fill:#CCCACC;}
+	.st29{clip-path:url(#SVGID_2_);fill:#CBC9CB;}
+	.st30{clip-path:url(#SVGID_2_);fill:#CAC8CA;}
+	.st31{clip-path:url(#SVGID_2_);fill:#C9C8C9;}
+	.st32{clip-path:url(#SVGID_2_);fill:#C8C7C9;}
+	.st33{clip-path:url(#SVGID_2_);fill:#C8C6C8;}
+	.st34{clip-path:url(#SVGID_2_);fill:#C7C5C7;}
+	.st35{clip-path:url(#SVGID_2_);fill:#C6C4C6;}
+	.st36{clip-path:url(#SVGID_2_);fill:#C5C3C5;}
+	.st37{clip-path:url(#SVGID_2_);fill:#C4C3C5;}
+	.st38{clip-path:url(#SVGID_2_);fill:#C4C2C4;}
+	.st39{clip-path:url(#SVGID_2_);fill:#C3C1C3;}
+	.st40{clip-path:url(#SVGID_2_);fill:#C2C1C3;}
+	.st41{clip-path:url(#SVGID_2_);fill:#C2C0C2;}
+	.st42{clip-path:url(#SVGID_2_);fill:#C1BFC1;}
+	.st43{clip-path:url(#SVGID_2_);fill:#C0BFC1;}
+	.st44{clip-path:url(#SVGID_2_);fill:#C0BEC0;}
+	.st45{clip-path:url(#SVGID_2_);fill:#BFBDBF;}
+	.st46{clip-path:url(#SVGID_2_);fill:#BEBDBF;}
+	.st47{clip-path:url(#SVGID_2_);fill:#BEBCBE;}
+	.st48{clip-path:url(#SVGID_2_);fill:#BDBCBE;}
+	.st49{clip-path:url(#SVGID_2_);fill:#BDBBBE;}
+	.st50{clip-path:url(#SVGID_2_);fill:#BDBBBD;}
+	.st51{clip-path:url(#SVGID_2_);fill:#BCBBBD;}
+	.st52{opacity:0.5;}
+	.st53{fill:#FFFFFF;}
+</style>
+<g>
+	<g id="XMLID_38_">
+		<path class="st0" d="M32,62C15.5,62,2,48.5,2,32S15.5,2,32,2s30,13.5,30,30S48.5,62,32,62z M32,4C16.6,4,4,16.6,4,32
+			s12.6,28,28,28s28-12.6,28-28S47.4,4,32,4z"/>
+	</g>
+	<g id="XMLID_79_">
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M8.6,32c0,16,9.8,22.6,23.4,29C16,61,3,48,3,32S16,3,32,3C18.3,10,8.6,16,8.6,32z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st1" d="M3,3v58V3z"/>
+			
+			<path class="st51" d="M32,61V3V61z"/>
+		</g>
+	</g>
+	<g id="XMLID_74_">
+		<path class="st0" d="M32,54c-12.1,0-22-9.9-22-22s9.9-22,22-22s22,9.9,22,22S44.1,54,32,54z M32,12c-11,0-20,9-20,20
+			c0,11,9,20,20,20c11,0,20-9,20-20C52,21,43,12,32,12z"/>
+	</g>
+
+	<g id="XMLID_75_">
+		<path class="st0" d="M32,46c-7.7,0-14-6.3-14-14s6.3-14,14-14s14,6.3,14,14S39.7,46,32,46z M32,20c-6.6,0-12,5.4-12,12
+			c0,6.6,5.4,12,12,12c6.6,0,12-5.4,12-12C44,25.4,38.6,20,32,20z"/>
+	</g>
+	<g id="XMLID_76_">
+		<circle class="st53" cx="53" cy="31" r="4"/>
+		<path class="st0" d="M53,36c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S55.8,36,53,36z M53,28c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S54.7,28,53,28z"/>
+	</g>
+	<g id="XMLID_78_">
+		<circle class="st53" cx="13" cy="10" r="4"/>
+		<path class="st0" d="M13,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S15.8,15,13,15z M13,7c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S14.7,7,13,7z"/>
+	</g>
+	<g id="XMLID_77_">
+		<path class="st0" d="M32,33c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l26-26c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-26,26
+			C32.5,32.9,32.3,33,32,33z"/>
+	</g>
+</g>
+</svg>
