@@ -89,7 +89,7 @@
     }
   }
 }
-.delivery__page-banner, .payment__page-banner{
+.delivery__page-banner, .payment__page-banner, .supliers__page-banner{
   background : url(../img/delivery-baner.png) no-repeat center center;
   background-size     : 100% auto;
   background-position : 0 0;
@@ -129,15 +129,43 @@
     background-size           : cover;
   }
 }
+.supliers__page-banner{
+  background: url("../img/supliers-banner.png") no-repeat center center;
+  background-size     : 100% auto;
+  background-position : 0 0;
+  @media screen and (max-width : 768px){
+    height              : 300px;
+    background          : url(../img/supliers-banner-mobile.jpg) no-repeat;
+    background-position : center;
+    background-size     : cover;
+  }
+  @media screen and (max-width : 430px){
+    height                    : 200px;
+    background-position       : center;
+    -webkit-background-size   : cover;
+    background-size           : cover;
+  }
+  .banner__title .header__article__title{
+    @media screen and (max-width : 430px){
+      font-size: 38px;
+    }
+  }
+}
 .header__article__title{
   margin    : 0;
   font-size : 1em;
 }
-.delivery__page-title, .payment__page-title{
+.delivery__page-title, .payment__page-title,.supliers__page-title{
   padding : 0;
 }
-.payment__page-title{
-  background: none;
+.payment__page-title, .supliers__page-title{
+  margin-top: 10px;
+  padding-top: 80px;
+  @media screen and (max-width : 980px){
+    padding-top: 0;
+    background: none;
+    margin-top: 30px;
+  }
 }
 .static__variants__tools-list{
   display         : flex;
@@ -160,7 +188,7 @@
       padding     : 20px 0;
       text-align  : center;
     }
-    .delivery__article__title{
+    .delivery__article__title, .payment__article__title, .supliers__article__title{
       font-size : 20px;
       padding   : 16px 0;
     }
@@ -169,6 +197,26 @@
       line-height : 24px;
       color       : #1e1e1e;
     }
+  }
+}
+.supliers__page-title{
+  .static__variants__tools-list{
+    justify-content: space-between;
+    .static__variant-item {
+      display: block;
+      margin: 0;
+      width: 44%;
+      padding-bottom: 50px;
+      padding-right: 30px;
+      padding-left: 30px;
+      @media screen and (max-width : 768px){
+        margin-top  : 0px;
+        width       : 100%;
+        padding     : 20px 0;
+        text-align  : center;
+      }
+    }
+
   }
 }
 .attention__article{
@@ -197,7 +245,7 @@
     }
   }
 }
-.delivery-svg{
+.delivery-svg, .payment-svg,.supliers-svg{
   width  : 132px;
   height : 132px;
 }
