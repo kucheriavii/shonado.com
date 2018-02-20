@@ -91,9 +91,6 @@
 }
 .about-banner__content .banner__title{
   display: none;
-  @media screen and (max-width : 768px){
-    display: block;
-  }
 }
 .about-page__preview{
   margin-top: 0;
@@ -166,7 +163,7 @@
   background-position : 0 0;
   @media screen and (max-width : 768px){
     height              : 300px;
-    background          : url(../img/supliers-banner-mobile.jpg) no-repeat;
+    background          : url(../img/about-banner-mobile.jpg) no-repeat;
     background-position : center;
     background-size     : cover;
   }
@@ -275,6 +272,10 @@
       color       : #1e1e1e;
     }
   }
+  .video__tab-title{
+    top: 17px;
+    left: 20px;
+  }
   .video__mobile{
     display: none;
     @media screen and (max-width : 992px){
@@ -344,7 +345,11 @@
   }
   p{
     padding-bottom: 26px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 20px;
+    &:last-child{
+      padding-bottom: 0;
+    }
   }
 }
 .attention__article{

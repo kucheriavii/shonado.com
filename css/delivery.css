@@ -197,6 +197,11 @@
   font-size: 34px;
 }
 
+.about-video-page .video__tab-title {
+  top: 17px;
+  left: 20px;
+}
+
 .about-video-page .video__mobile {
   display: none;
 }
@@ -257,7 +262,12 @@
 
 .about-description p {
   padding-bottom: 26px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.about-description p:last-child {
+  padding-bottom: 0;
 }
 
 .attention__article {
@@ -365,10 +375,6 @@
     background-size: cover;
   }
 
-  .about-banner__content .banner__title {
-    display: block;
-  }
-
   .delivery__page-banner,
   .payment__page-banner,
   .supliers__page-banner,
@@ -395,7 +401,7 @@
 
   .about__page-banner {
     height: 300px;
-    background: url(../img/supliers-banner-mobile.jpg) no-repeat;
+    background: url(../img/about-banner-mobile.jpg) no-repeat;
     background-position: center;
     background-size: cover;
   }
