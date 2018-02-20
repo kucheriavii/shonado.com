@@ -249,6 +249,10 @@
   }
   .products__page-good{
     margin: 50px auto;
+    @media screen and (max-width : 992px){
+      border-color: #ff0054;
+      color       : #ff0054;
+    }
   }
 }
 .about-video-page{
@@ -265,6 +269,7 @@
   }
   .header__article__title{
     margin-left: -20px;
+    font-size: 34px;
     @media screen and (max-width : 992px){
       margin-left : 0;
       color       : #1e1e1e;
@@ -275,6 +280,9 @@
     @media screen and (max-width : 992px){
       display: block;
     }
+  }
+  .video__mobile-title{
+    color: #1e1e1e;
   }
 }
 .static__variants__tools-list{
@@ -331,6 +339,9 @@
 }
 .about-description{
   margin-bottom: 50px;
+  @media screen and (max-width : 992px){
+    margin: 50px 0;
+  }
   p{
     padding-bottom: 26px;
     line-height: 18px;

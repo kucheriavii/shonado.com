@@ -194,10 +194,15 @@
 
 .about-video-page .header__article__title {
   margin-left: -20px;
+  font-size: 34px;
 }
 
 .about-video-page .video__mobile {
   display: none;
+}
+
+.about-video-page .video__mobile-title {
+  color: #1e1e1e;
 }
 
 .static__variants__tools-list {
@@ -312,6 +317,11 @@
     display: none;
   }
 
+  .about-gallery .products__page-good {
+    border-color: #ff0054;
+    color: #ff0054;
+  }
+
   .about-video-page {
     padding: 0;
   }
@@ -323,6 +333,10 @@
 
   .about-video-page .video__mobile {
     display: block;
+  }
+
+  .about-description {
+    margin: 50px 0;
   }
 }
 
