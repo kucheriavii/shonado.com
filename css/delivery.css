@@ -79,7 +79,10 @@
   .static-page__preview-inner .container {
     height: 100%; }
 
-.delivery__page-banner, .payment__page-banner, .supliers__page-banner {
+.about-page__preview {
+  margin-top: 0; }
+
+.delivery__page-banner, .payment__page-banner, .supliers__page-banner, .about__page-banner {
   background: url(../img/delivery-baner.png) no-repeat center center;
   background-size: 100% auto;
   background-position: 0 0;
@@ -88,13 +91,13 @@
   position: relative;
   outline: none; }
   @media screen and (max-width: 768px) {
-    .delivery__page-banner, .payment__page-banner, .supliers__page-banner {
+    .delivery__page-banner, .payment__page-banner, .supliers__page-banner, .about__page-banner {
       height: 300px;
       background: url(../img/delivery-baner-mobile.jpg) no-repeat;
       background-position: 0 0;
       background-size: cover; } }
   @media screen and (max-width: 430px) {
-    .delivery__page-banner, .payment__page-banner, .supliers__page-banner {
+    .delivery__page-banner, .payment__page-banner, .supliers__page-banner, .about__page-banner {
       height: 200px;
       background: url(../img/delivery-baner-mobile.jpg) no-repeat;
       background-position: 0 0;
@@ -139,11 +142,31 @@
     .supliers__page-banner .banner__title .header__article__title {
       font-size: 38px; } }
 
+.about__page-banner {
+  background: url("../img/about-banner.png") no-repeat center center;
+  background-size: 100% auto;
+  background-position: 0 0; }
+  @media screen and (max-width: 768px) {
+    .about__page-banner {
+      height: 300px;
+      background: url(../img/supliers-banner-mobile.jpg) no-repeat;
+      background-position: center;
+      background-size: cover; } }
+  @media screen and (max-width: 430px) {
+    .about__page-banner {
+      height: 200px;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover; } }
+  @media screen and (max-width: 430px) {
+    .about__page-banner .banner__title .header__article__title {
+      font-size: 38px; } }
+
 .header__article__title {
   margin: 0;
   font-size: 1em; }
 
-.delivery__page-title, .payment__page-title, .supliers__page-title {
+.delivery__page-title, .payment__page-title, .supliers__page-title, .about__page-title {
   padding: 0; }
 
 .payment__page-title, .supliers__page-title {
@@ -154,6 +177,43 @@
       padding-top: 0;
       background: none;
       margin-top: 30px; } }
+
+.about__page-title {
+  padding-top: 38px;
+  background: none; }
+  .about__page-title p {
+    margin-bottom: 24px;
+    font-size: 17px;
+    color: #1e1e1e;
+    letter-spacing: 0.2px;
+    line-height: 20px; }
+
+.about-gallery {
+  padding: 0 34px 30px 34px;
+  position: relative; }
+  .about-gallery:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/overviews-bg.jpg") center;
+    height: 400px;
+    width: 100%;
+    top: 108px;
+    z-index: -1; }
+  .about-gallery .section__title {
+    margin-top: 0px;
+    font-size: 34px;
+    padding-left: 15px; }
+  .about-gallery .about-gallery__list {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    align-items: center; }
+  .about-gallery .g-arr-l {
+    padding-right: 5px; }
+  .about-gallery .g-arr-r {
+    padding-left: 5px; }
 
 .static__variants__tools-list {
   display: flex;
