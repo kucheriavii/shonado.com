@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.main-menu__top-wrap {
+  display: flex;
+  background: #171922;
+  width: 100%;
+  height: 52px; }
+  .main-menu__top-wrap .main-menu__top-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between; }
+  .main-menu__top-wrap .main-menu__top-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #3a3c43;
+    border-top: none;
+    border-bottom: none;
+    width: 100%; }
+    .main-menu__top-wrap .main-menu__top-item:first-child {
+      width: 187px;
+      /*Нужно для того чтобы былы равны первые елементы*/
+      max-width: 187px;
+      min-width: 187px; }
+  .main-menu__top-wrap .main-menu__top-link {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    background: #171922; }
+  .main-menu__top-wrap .header__action-link {
+    width: 68px;
+    height: 52px; }
+
+.main-menu__bottom {
+  background: #0c0e16; }
+  .main-menu__bottom .header__search {
+    align-items: center;
+    z-index: 10; }
+  .main-menu__bottom .header__search input {
+    background-color: #fff;
+    height: 35px; }
+  .main-menu__bottom .header__search button {
+    background-color: #fff;
+    height: 35px;
+    margin-left: -1px; }
+  .main-menu__bottom .header__city {
+    max-width: 280px;
+    width: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    background: #0c0e16; }
+    .main-menu__bottom .header__city a.curent_city-link:before {
+      content: "";
+      display: block;
+      background: url(../img/position.png);
+      width: 18px;
+      height: 24px;
+      margin-right: 10px; }
+  .main-menu__bottom .header__about > a span {
+    position: static;
+    margin-left: 5px; }
