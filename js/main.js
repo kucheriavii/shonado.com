@@ -1236,8 +1236,8 @@
 		$(function() {
 			if ($(window).width() > 992) {
 
-				let mobTSN = $('.header__mobile-list .header__logo-descr');
-				let mobMenu = $('.header__mobile-list .header__nav');
+				let mobTSN = $('.header__mobile-list .header__logo-descr').eq(1);
+				let mobMenu = $('.header__mobile-list .header__nav').eq(1);
 
 				if (mobTSN.length > 0) {
 					mobTSN.appendTo($('.header__bottom .container'));
@@ -1254,7 +1254,7 @@
 					deskTSN.insertAfter($('.header__mobile-search'));
 				}
 
-				if (deskMenu.length > 0) {
+				if (deskMenu.length > 0 && !$('body').is('.header__nav')) {
 					deskMenu.insertAfter($('.header__mobile-list .header__logo-descr'));
 				}
 			}
